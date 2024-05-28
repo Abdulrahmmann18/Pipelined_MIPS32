@@ -35,5 +35,5 @@ The work is continued to implement the pipeline MIPS processor by
 # The wave form from modelsim
 ![waveform](https://github.com/Abdulrahmmann18/Pipelined_MIPS32/assets/144833244/53ce634b-92c5-468f-b536-ddbac15a782f)
 
-# The program excuted
+# The program executed
 ![program_excuted](https://github.com/Abdulrahmmann18/Pipelined_MIPS32/assets/144833244/c6d52ea9-80a0-4d27-ab69-dd8f97011673)
