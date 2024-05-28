@@ -15,9 +15,6 @@ module Pipelined_MIPS
 	wire [31:0] pc_in_top, PC_OUT_plus4_top, IF_ID_PC_plus4_top, IF_ID_Instruction_top, MEM_WB_wr_data_top,
 				ID_EX_rd_data1_top, ID_EX_rd_data2_top, ID_EX_sign_ext_OUT_top, EX_MEM_ALU_result_top,
 				EX_MEM_DMEM_wr_data_top, MEM_WB_DMEM_rd_data_top, MEM_WB_ALU_result_top;
-	
-/* ******************************************************************** WIRES ASIGNMENTS **************************************************************** */ 
-	
 								 
 
 /* *************************************************************** MODULES INSTANTIATION ************************************************************* */ 
@@ -38,7 +35,7 @@ module Pipelined_MIPS
 	);
 
 	// excute stage
-	Excute_stage excute (
+	Execute_stage execute (
 		.clk(clk), .rst(rst), .EX_MEM_RegWrite(EX_MEM_CU_signals_top[0]), .MEM_WB_RegWrite(MEM_WB_CU_signals_top[0]),
 		.IF_ID_rs_field(IF_ID_rs_field_top), .IF_ID_rt_field(IF_ID_rt_field_top), .ID_EX_rd_field(ID_EX_rd_field_top),
 		.ID_EX_rs_field(ID_EX_rs_field_top), .ID_EX_rt_field(ID_EX_rt_field_top), .EX_MEM_rd_field(EX_MEM_rd_field_top), 
